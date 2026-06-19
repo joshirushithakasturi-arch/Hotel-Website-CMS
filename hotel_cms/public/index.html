@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel CMS</title>
+<link rel="stylesheet" href="style.css">
+<section id="payment" class="content center">
+    <div class="box">
+        <h2>Payment</h2>
+        <p id="roomInfo"></p>
+
+        <input type="text" id="cardName" placeholder="Card Holder Name">
+        <input type="text" id="cardNumber" placeholder="Card Number">
+        <input type="text" id="cvv" placeholder="CVV">
+
+        <button onclick="completePayment()">Pay Now</button>
+    </div>
+</section>
+</head>
+
+<body>
+
+
+
+    
+<!-- ✅ NAVBAR FIXED -->
+<header class="navbar">
+    <h1 class="logo">HOTEL KLH</h1>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('rooms')">Rooms</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+    </ul>
+</header>
+
+<!-- HOME -->
+<section id="home" class="content active center">
+    <div class="hero-box">
+        <h1>Luxury Stay</h1>
+        <p>Experience premium comfort</p>
+        <button onclick="showSection('rooms')">Explore</button>
+    </div>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="content center">
+    <div class="box">
+        <h2>Login</h2>
+        <input id="user" placeholder="Username">
+        <input id="pass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms" class="content">
+    <h1>Rooms</h1>
+    <div id="roomList" class="grid"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="content">
+    <h1>About Our Hotel</h1>
+
+    <p>
+        Our platform provides a seamless hotel booking experience without relying on third-party services.
+        We focus on delivering direct bookings, better pricing, and full control for hotel management.
+    </p>
+
+    <p>
+        ✨ Features:
+        <br>✔ Real-time room availability  
+        <br>✔ Secure Razorpay payment integration  
+        <br>✔ Direct booking without commission  
+        <br>✔ Modern user-friendly interface  
+    </p>
+
+    <p>
+        🚀 Our Mission:
+        <br>
+        To simplify hotel management systems and provide a premium booking experience
+        for customers with transparency and efficiency.
+    </p>
+
+    <h3>Booking History</h3>
+    <div id="bookingHistory"></div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-section">
+            <h2>Hotel CMS</h2>
+            <p>Experience luxury and comfort with our premium hotel booking system.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('rooms')">Rooms</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@hotelcms.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Hotel CMS | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
